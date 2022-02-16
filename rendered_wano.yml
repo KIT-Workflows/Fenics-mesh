@@ -1,0 +1,11 @@
+Parameters:
+- Beta: 8.0
+  FunctionSpace: 1
+  Mesh: 36
+  R0: 0.6
+  label: label
+- Beta: 8.0
+  FunctionSpace: 2
+  Mesh: 36
+  R0: 0.6
+  label: label

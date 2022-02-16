@@ -1,0 +1,40 @@
+<WaNoTemplate>
+    
+    <WaNoMeta>
+ 		<Author>
+  			<Name> Celso R. C. Rego </Name>
+  			<Email>celsorego@kit.edu</Email>
+ 		</Author>
+
+		<Description>
+   			This WaNo uses the Finite Element Fenics library
+ 		</Description>
+
+ 		<Keyword>Finite Element</Keyword>
+	</WaNoMeta>
+	
+	<WaNoRoot name="Fenics-mesh">
+	<WaNoMultipleOf name="Parameters">
+ 		<Element id="0">
+			<WaNoInt name="Mesh">36</WaNoInt>
+			<WaNoInt name="FunctionSpace">1</WaNoInt>
+			<WaNoFloat name="Beta">8.0</WaNoFloat>
+			<WaNoFloat name="R0">0.6</WaNoFloat>
+			<WaNoString name="label">label</WaNoString>
+		</Element>
+ 	</WaNoMultipleOf>
+	</WaNoRoot>
+	
+	<WaNoExecCommand>
+		source  /home/ws/gt5111/miniconda3/etc/profile.d/conda.sh
+		conda activate
+		python Poisson_membrane_t1.py
+	</WaNoExecCommand>
+	
+	<WaNoInputFiles>
+		<WaNoInputFile logical_filename="Poisson_membrane_t1.py">Poisson_membrane_t1.py</WaNoInputFile>
+	</WaNoInputFiles>
+	<WaNoOutputFiles>
+		<WaNoOutputFile>OUTFE</WaNoOutputFile>
+	</WaNoOutputFiles>
+</WaNoTemplate>
